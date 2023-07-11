@@ -2,7 +2,7 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class Vehicle implements CanAccelerate{
+public class Vehicle implements CanAccelerate, Break{
 
     private int tireAmount;
     private boolean isEngineRunning = false;
@@ -93,6 +93,17 @@ public class Vehicle implements CanAccelerate{
 
     @Override
     public boolean accelerate() {
+        System.out.println("Did you ever hear a Vehicle accelerate?");
         return false;
+    }
+
+    @Override
+    public void decelerate() {
+        System.out.println("The Vehicle stopped");
+    }
+
+    @Override
+    public void stepOnTheBreak() {
+
     }
 }

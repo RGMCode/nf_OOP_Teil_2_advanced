@@ -36,4 +36,15 @@ public class Motorbike extends Vehicle{
     public int hashCode() {
         return Objects.hash(super.hashCode(), wearHelmet, isWeatherGood);
     }
+
+    @Override
+    public boolean accelerate() {
+        System.out.println("tatttttattatttaaaattttttta");
+        return true;
+    }
+
+    @Override
+    public void decelerate() {
+        System.out.println("tttttatatatatatatatat Vehicle stopped");
+    }
 }

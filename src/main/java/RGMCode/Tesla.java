@@ -43,4 +43,15 @@ public class Tesla extends Vehicle{
     public int hashCode() {
         return Objects.hash(super.hashCode(), batterysize);
     }
+
+    @Override
+    public boolean accelerate() {
+        System.out.println("wwwwrrrrrrrr");
+        return true;
+    }
+
+    @Override
+    public void decelerate() {
+        System.out.println("rrrrrrrrwwww Vehicle stopped");
+    }
 }
