@@ -2,7 +2,7 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class Vehicle implements CanAccelerate, Break{
+public class Vehicle implements CanAccelerate, Break {
 
     private int tireAmount;
     private boolean isEngineRunning = false;
@@ -104,6 +104,6 @@ public class Vehicle implements CanAccelerate, Break{
 
     @Override
     public void stepOnTheBreak() {
-
+        System.out.println("Emergency Break");
     }
 }

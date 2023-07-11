@@ -47,4 +47,9 @@ public class Motorbike extends Vehicle{
     public void decelerate() {
         System.out.println("tttttatatatatatatatat Vehicle stopped");
     }
+
+    @Override
+    public void stepOnTheBreak() {
+        System.out.println("qqqqqquiiiiiiiiitsch Emergancy break");
+    }
 }

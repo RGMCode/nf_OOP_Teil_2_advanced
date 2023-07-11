@@ -54,4 +54,9 @@ public class Tesla extends Vehicle{
     public void decelerate() {
         System.out.println("rrrrrrrrwwww Vehicle stopped");
     }
+
+    @Override
+    public void stepOnTheBreak() {
+        System.out.println("qqqqqquiiiiiiiiitsch Emergancy break");
+    }
 }
