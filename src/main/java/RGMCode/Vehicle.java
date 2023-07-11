@@ -2,7 +2,7 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class Vehicle {
+public class Vehicle implements CanAccelerate{
 
     private int tireAmount;
     private boolean isEngineRunning = false;
@@ -89,5 +89,10 @@ public class Vehicle {
     @Override
     public int hashCode() {
         return Objects.hash(tireAmount, isEngineRunning, brand, model, dateOfConstruction);
+    }
+
+    @Override
+    public boolean accelerate() {
+        return false;
     }
 }
